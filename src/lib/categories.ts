@@ -3,7 +3,7 @@ import type { ProjectCategory } from "./types";
 export const PROJECT_CATEGORIES: ProjectCategory[] = [
   "AI Research",
   "Data Science",
-  "Systems & DevOps",
+  "Systems and Automation",
   "Full-Stack",
 ];
 
@@ -23,7 +23,7 @@ export const categoryStyles: Record<
     glow: "shadow-cyan-500/10",
     badge: "bg-cyan-500/15 text-cyan-300 ring-cyan-500/25",
   },
-  "Systems & DevOps": {
+  "Systems and Automation": {
     accent: "text-amber-400",
     border: "border-amber-500/30",
     glow: "shadow-amber-500/10",

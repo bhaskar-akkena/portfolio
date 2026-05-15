@@ -30,43 +30,39 @@ export function BiasHighlight() {
           className="relative mt-8 overflow-hidden rounded-2xl border border-violet-500/25 bg-gradient-to-br from-midnight-elevated via-midnight-surface to-midnight p-8 shadow-2xl shadow-violet-950/30 sm:p-10"
         >
           <div
-            aria-hidden
-            className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-violet-600/10 blur-3xl"
+            aria-hidden="true"
+            className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-violet-500/10 blur-3xl"
           />
 
-          <div className="relative grid gap-8 lg:grid-cols-[1fr_auto]">
-            <div>
-              <p className="text-sm leading-relaxed text-zinc-400">
-                An empirical investigation into how large language models
-                reproduce and amplify stereotypes when generating travel content.
-                This research combines automated bias detection, geographic
-                fairness scoring, and structured human evaluation to surface
-                harms that standard benchmarks often miss.
+          <div className="relative flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
+            <div className="max-w-2xl">
+              <p className="text-base leading-relaxed text-zinc-400">
+                A research-driven investigation into how large language models
+                perceive and represent global cultures[cite: 14]. This study analyzes 
+                500,000+ generated samples to characterize systematic asymmetries in 
+                multilingual travel discourse through automated validation frameworks 
+                and semantic analysis[cite: 14, 15].
               </p>
 
               <ul className="mt-6 space-y-3">
-                {findings.map((finding, i) => (
-                  <motion.li
+                {findings.map((finding) => (
+                  <li
                     key={finding}
-                    initial={{ opacity: 0, x: -12 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.15 + i * 0.1 }}
                     className="flex items-start gap-3 text-sm text-zinc-300"
                   >
-                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-violet-400" />
-                    {finding}
-                  </motion.li>
+                    <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-violet-400" />
+                    {finding} [cite: 14]
+                  </li>
                 ))}
               </ul>
 
               <div className="mt-8 flex flex-wrap gap-2">
-                {["NLP", "Fairness", "LLM Evaluation", "HCI"].map((tag) => (
+                {["NLP", "Data Pipelines", "Semantic Embeddings", "Bias Characterization"].map((tag) => (
                   <span
                     key={tag}
-                    className="rounded-full bg-violet-500/10 px-3 py-1 font-mono text-xs text-violet-300 ring-1 ring-violet-500/20"
+                    className="rounded-full bg-violet-500/10 px-3 py-1 text-[10px] font-medium uppercase tracking-wider text-violet-300 ring-1 ring-violet-500/20"
                   >
-                    {tag}
+                    {tag} [cite: 15]
                   </span>
                 ))}
               </div>
@@ -75,22 +71,24 @@ export function BiasHighlight() {
             <div className="flex flex-col justify-center gap-3 lg:min-w-[180px]">
               <div className="rounded-xl border border-violet-500/20 bg-midnight/60 p-4 text-center">
                 <p className="font-mono text-2xl font-light text-violet-300">
-                  4+
+                  500k+
                 </p>
-                <p className="mt-1 text-xs text-zinc-500">Model families</p>
+                <p className="mt-1 text-xs text-zinc-500">Narratives analyzed [cite: 14]</p>
               </div>
               <div className="rounded-xl border border-violet-500/20 bg-midnight/60 p-4 text-center">
                 <p className="font-mono text-2xl font-light text-violet-300">
                   12
                 </p>
-                <p className="mt-1 text-xs text-zinc-500">Bias dimensions</p>
+                <p className="mt-1 text-xs text-zinc-500">Bias dimensions [cite: 14]</p>
               </div>
             </div>
           </div>
 
           <div className="relative mt-8 flex flex-wrap gap-4 border-t border-violet-500/15 pt-6">
             <a
-              href="#"
+              href="/DSCI_602.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm font-medium text-violet-300 transition-colors hover:text-violet-200"
             >
               Read paper →
@@ -99,7 +97,7 @@ export function BiasHighlight() {
               href="#projects"
               className="text-sm text-zinc-500 transition-colors hover:text-zinc-300"
             >
-              Related projects
+              View methodology
             </a>
           </div>
         </motion.article>

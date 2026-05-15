@@ -2,13 +2,13 @@ import type { ExperienceEntry } from "@/lib/types";
 
 export const experience: ExperienceEntry[] = [
   {
-    id: "exp-sysadmin",
-    period: "Jan 2023 – May 2024",
-    title: "System Administrator",
-    organization: "Saunders College of Business",
+    id: "exp-research",
+    period: "2024 – Present",
+    title: "AI Researcher and Data Scientist",
+    organization: "Rochester Institute of Technology",
     description:
-      "Managed 50+ enterprise systems, migrated Docker workloads to Kubernetes, and implemented Zabbix monitoring to reduce downtime by 25%.",
-    phase: "foundations",
+      "Developing high-throughput data pipelines and automated validation frameworks to quantify discourse patterns across large-scale language models. Leveraged a 500,000-sample multilingual corpus and cross-model semantic analysis to engineer robust mitigation strategies for systematic asymmetries in AI-generated travel data.",
+    phase: "research",
   },
   {
     id: "exp-ta",
@@ -16,16 +16,25 @@ export const experience: ExperienceEntry[] = [
     title: "Graduate Teaching Assistant",
     organization: "Rochester Institute of Technology",
     description:
-      "Mentored 150+ students in task automation and analysis using Python and Bash while managing weekly lab sessions and code reviews for advanced computing courses.",
+      "Mentoring 150+ students in advanced computing and task automation. Conducting intensive code reviews and managing laboratory sessions focused on Python-based data analysis and Linux/Bash shell scripting to improve student engineering efficiency.",
     phase: "analytics",
   },
   {
-    id: "exp-research",
-    period: "2024 – Present",
-    title: "AI Researcher & MS Data Science",
-    organization: "RIT (Master's Student)",
+    id: "exp-sysadmin",
+    period: "May 2023 – May 2024",
+    title: "System Administrator",
+    organization: "Saunders College of Business",
     description:
-      "Researching toxicity control and cultural bias in LLMs while maintaining a 3.6 GPA in Data Science.",
-    phase: "research",
+      "Managed 50+ enterprise systems and virtualized infrastructure. Migrated high-availability Docker workloads to Kubernetes clusters and implemented Zabbix-based proactive monitoring, reducing critical system downtime by 25% across the college's data center.",
+    phase: "foundations",
+  },
+  {
+    id: "exp-it-analyst",
+    period: "Jan 2023 – May 2023",
+    title: "IT Support Analyst",
+    organization: "Saunders College of Business",
+    description:
+      "Provided enterprise-level technical support for hardware and software systems. Optimized imaging processes and resolved complex networking issues for faculty and staff, ensuring seamless integration within a Macintosh and Windows hybrid environment.",
+    phase: "foundations",
   },
 ];

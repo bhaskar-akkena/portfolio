@@ -1,7 +1,7 @@
 export type ProjectCategory =
   | "AI Research"
   | "Data Science"
-  | "Systems & DevOps"
+  | "Systems and Automation"
   | "Full-Stack";
 
 export type Project = {
